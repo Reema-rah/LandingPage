@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>VES-XP</title>
+</head>
+<body>
+  <section class="home" id="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide slide" style="background-image: url(assets/register-company-online.png);">
+            <div class="content">
+              <span><h3>Our customers depend on us</h3></span>
+            </div>
+         </div>
+         <div class="swiper-slide slide" style="background-image: url(assets/360_F_353995594_6AW7CYzgqkSTCMktfFSm2XyjvLDzauDX.jpg);">
+            <div class="content">
+               <span><h3>This service is worth a try</h3></span>
+            </div>
+         </div>
+         <div class="swiper-slide slide" style="background-image: url(assets/team-building-1.png.webp);">
+            <div class="content">
+               <span><h3>Your satisfaction matters to us</h3></span>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-button-next swiper-button-black"></div>
+      <div class="swiper-button-prev swiper-button-black"></div>
+   </div>
+  </section>
+
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <img src="assets/Screenshot 2024-04-09 112826 (1).png" alt="VES-XP Logo" class="tent-1" />
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT US</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#login">LOGIN</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" id="about">
+    <h1>About Us</h1> <br>
+    <div class="container__left">
+      <h1>VES-XP</h1>
+      <h3>inVESt in your time and effort</h3>
+    </div>
+    <div class="container__right">
+      <div class="images">
+        <img src="assets/download.png" alt="tent-1" class="tent-1" />
+        <img src="assets/download (1).png" alt="tent-2" class="tent-2" />
+      </div>
+      <div class="content">
+        <h5> At VES-XP, we empower developers with the tools, support, and structure to thrive in software development. </h5>
+        <h2> We transform complex project ideas into successful outcomes through collaboration, innovation, and precision. </h2>
+        <p>
+          As trusted partners, we enable developer excellence
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="services">
+    <h1 class="services-heading">Our Services</h1> <br>
+    <div class="cont">
+      <div class="box">
+        <img src="assets/1676478891_time-7783494_1676478891.png"><br>
+        <span><h4>Manage Your Time</h4></span>
+      </div>
+      <div class="box">
+        <img src="assets/Resource_Management-1800.jpg"><br>
+        <span><h4>Manage Your Resources</h4></span>
+      </div> 
+      <div class="box">
+        <img src="assets/integration_still_2x.gif"><br>
+        <span><h4> Track Your Progress</h4></span>
+      </div>
+      <div class="box">
+        <img src="assets/960x0.webp"><br>
+        <span><h4>Involve Your Customer</h4></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section starts -->
+  <footer class="footer"id="contact">
+    <div class="contact-info" >
+      <h3>Contact Us</h3>
+      <p>Email: ves-xp@gmail.com</p>
+    </div>
+    <div class="rights-info">
+      <p>All rights reserved &copy; 2024</p>
+      <p>Made in Saudi</p>
+    </div>
+  </footer>
+  <!-- Footer section ends -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.home-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+</html>
